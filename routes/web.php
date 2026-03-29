@@ -26,5 +26,10 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/tasks/{id}', [TaskController::class, 'destroy'])->name('tasks.destroy');
     Route::patch('/tasks/{id}/toggle', [TaskController::class, 'toggle'])->name('tasks.toggle');
 });
+// Public API endpoints
+
+Route::get('/api/tasks', [TaskController::class, 'apiIndex'])->name('api.tasks.index');
 
 require __DIR__.'/auth.php';
+
+
