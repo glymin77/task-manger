@@ -16,19 +16,19 @@ class TaskSeeder extends Seeder
         Task::create([
             'title' => 'Task 1',
             'description' => 'Description for Task 1',
-            'status' => 'pending',
+            //'status' => 'pending',
         ]);
 
         Task::create([
             'title' => 'Task 2',
             'description' => 'Description for Task 2',
-            'status' => 'pending',
+            //'status' => 'pending',
         ]);
 
         Task::create([
             'title' => 'Task 3',
             'description' => 'Description for Task 3',
-            'status' => 'pending',
+            //'status' => 'pending',
         ]);
     }
 }

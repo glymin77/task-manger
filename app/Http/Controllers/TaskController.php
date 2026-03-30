@@ -43,4 +43,10 @@ class TaskController extends Controller
         $task->save();
         return redirect()->back()->with('success', 'Task updated Successfully!');
 }
+
+    // Public API endpoint to get all tasks
+    public function apiIndex()
+    {
+        return response()->json(Task::all());
+    }
 }
